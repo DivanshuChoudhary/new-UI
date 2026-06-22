@@ -153,3 +153,9 @@ body.dark{
     border-radius:8px;
     cursor:pointer;
 }
+
+#weatherIcon{
+    width:80px;
+    height:80px;
+    margin-bottom:10px;
+}

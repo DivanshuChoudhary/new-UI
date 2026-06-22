@@ -1,16 +1,34 @@
-
 function getWeather() {
 
     let city = document.getElementById("cityInput").value;
 
     if (!city) return;
 
-    // UI update (dummy data)
-    document.querySelector("h2").innerText = city;
+    document.getElementById("city").innerText = city;
 
-    document.querySelectorAll("h1")[1].innerText = "30°C";
+    // fake weather condition (later API se aayega)
+    let condition = "Sunny";
 
-    document.querySelector(".weather-card p").innerText = "Sunny ☀️";
+    document.getElementById("temp").innerText = "30°C";
+    document.getElementById("desc").innerText = condition;
+
+    let icon = document.getElementById("weatherIcon");
+
+    // 🌦 ICON LOGIC
+    if (condition === "Sunny") {
+        icon.src = "https://cdn-icons-png.flaticon.com/512/869/869869.png";
+    }
+    else if (condition === "Rain") {
+        icon.src = "https://cdn-icons-png.flaticon.com/512/1163/1163624.png";
+    }
+    else if (condition === "Clouds") {
+        icon.src = "https://cdn-icons-png.flaticon.com/512/414/414825.png";
+    }
+    else {
+        icon.src = "https://cdn-icons-png.flaticon.com/512/1163/1163661.png";
+    }
+
+}
 }
 
 function getWeather() {
@@ -57,3 +75,4 @@ btn.onclick = function(){
     }
 
 }
+
