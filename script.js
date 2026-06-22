@@ -92,3 +92,7 @@ forecast.forEach((item, i) => {
     boxes[i].querySelector("p").innerText = item.day;
     boxes[i].querySelector("span").innerText = item.temp + "°C";
 });
+
+// dummy values (later API se real aayega)
+document.getElementById("sunrise").innerText = "5:42 AM";
+document.getElementById("sunset").innerText = "6:58 PM";

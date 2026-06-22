@@ -18,74 +18,62 @@
   
     <div class="container">
 
-        <h1>🌤 Weather Dashboard</h1>
+    <h1>🌤 Weather Dashboard</h1>
 
-        <div class="search-box">
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city...">
+        <button onclick="getWeather()">Search</button>
+    </div>
 
-            <input type="text" id="cityInput" placeholder="Enter city...">
+    <!-- WEATHER CARD -->
+    <div class="weather-card">
+        <img id="weatherIcon" src="" alt="weather icon">
+        <h2 id="city">City</h2>
+        <h1 id="temp">--°C</h1>
+        <p id="desc">Weather Info</p>
+    </div>
 
-            <button onclick="getWeather()">Search</button>
+    <!-- ⭐ FORECAST SECTION (BELOW CARD) -->
+    <div class="forecast">
+
+        <h3>5 Day Forecast</h3>
+
+        <div class="forecast-box">
+
+            <div class="day"><p>Mon</p><span>28°C</span></div>
+            <div class="day"><p>Tue</p><span>30°C</span></div>
+            <div class="day"><p>Wed</p><span>27°C</span></div>
+            <div class="day"><p>Thu</p><span>29°C</span></div>
+            <div class="day"><p>Fri</p><span>31°C</span></div>
 
         </div>
 
-        <div class="weather-card">
-
-            <img id="weatherIcon" src="" alt="weather icon">
-
-            <h2 id="city">City</h2>
-            <h1 id="temp">--°C</h1>
-            <p id="desc">Weather Info</p>
-
-            <div class="extra">
-
-    <p>💧 Humidity: <span id="humidity">--</span>%</p>
-
-    <p>🌬 Wind: <span id="wind">--</span> km/h</p>
+    </div>
 
 </div>
 
+<!-- SUNRISE / SUNSET SECTION -->
+<div class="sun-section">
 
+    <h3>🌅 Sun Timing</h3>
 
+    <div class="sun-box">
+
+        <div class="sun-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="sunrise">
+            <p>Sunrise</p>
+            <span id="sunrise">5:45 AM</span>
+        </div>
+
+        <div class="sun-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="sunset">
+            <p>Sunset</p>
+            <span id="sunset">6:45 PM</span>
         </div>
 
     </div>
 
-    <!-- FORECAST SECTION -->
-<section class="forecast-section">
-
-    <h2>📅 5 Day Forecast</h2>
-
-    <div class="forecast-container">
-
-        <div class="forecast-day">
-            <p>Mon</p>
-            <span>28°C</span>
-        </div>
-
-        <div class="forecast-day">
-            <p>Tue</p>
-            <span>30°C</span>
-        </div>
-
-        <div class="forecast-day">
-            <p>Wed</p>
-            <span>27°C</span>
-        </div>
-
-        <div class="forecast-day">
-            <p>Thu</p>
-            <span>29°C</span>
-        </div>
-
-        <div class="forecast-day">
-            <p>Fri</p>
-            <span>31°C</span>
-        </div>
-
-    </div>
-
-</section>
-
+</div>
    
 
     <script src="script.js"></script>

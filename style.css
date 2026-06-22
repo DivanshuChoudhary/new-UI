@@ -168,39 +168,53 @@ body.dark{
     padding:5px;
 }
 
-.forecast-section{
-    margin-top:30px;
+.forecast{
     text-align:center;
     color:white;
 }
 
-.forecast-container{
+.forecast-box{
     display:flex;
+    gap:10px;
     justify-content:center;
-    gap:12px;
     flex-wrap:wrap;
-    margin-top:15px;
 }
 
-.forecast-day{
+.day{
+    background:rgba(255,255,255,0.2);
+    padding:10px;
+    border-radius:10px;
+    width:70px;
+}
+
+.sun-section{
+    margin-top:20px;   /* minor gap from forecast */
+    text-align:center;
+    color:white;
+}
+
+.sun-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:10px;
+}
+
+.sun-item{
     background:rgba(255,255,255,0.2);
     padding:15px;
     border-radius:12px;
-    width:80px;
-    backdrop-filter: blur(10px);
+    width:120px;
+    backdrop-filter:blur(10px);
     transition:0.3s;
 }
 
-.forecast-day:hover{
+.sun-item:hover{
     transform:scale(1.05);
 }
 
-.forecast-day p{
-    margin:0;
-    font-weight:bold;
-}
-
-.forecast-day span{
-    display:block;
-    margin-top:5px;
+.sun-item img{
+    width:40px;
+    height:40px;
+    margin-bottom:5px;
 }
