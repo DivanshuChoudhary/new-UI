@@ -1,14 +1,14 @@
+
 function getWeather() {
 
     let city = document.getElementById("cityInput").value;
 
     if (!city) return;
 
-    document.getElementById("city").innerText = city;
+    // UI update (dummy data)
+    document.querySelector("h2").innerText = city;
 
-    // dummy data (API later)
-    document.getElementById("temp").innerText = "28°C";
+    document.querySelectorAll("h1")[1].innerText = "30°C";
 
-    document.getElementById("desc").innerText = "Sunny ☀️";
-
+    document.querySelector(".weather-card p").innerText = "Sunny ☀️";
 }
