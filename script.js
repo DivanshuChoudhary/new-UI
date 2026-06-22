@@ -29,7 +29,7 @@ function getWeather() {
     }
 
 }
-}
+
 
 function getWeather() {
 
@@ -59,6 +59,8 @@ function getWeather() {
     if (document.getElementById("wind")) {
         document.getElementById("wind").innerText = wind;
     }
+    document.getElementById("humidity").innerText = "60";
+document.getElementById("wind").innerText = "12";
 }
 
 let btn = document.getElementById("themeToggle");
@@ -75,4 +77,5 @@ btn.onclick = function(){
     }
 
 }
+
 
