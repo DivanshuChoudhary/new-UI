@@ -78,4 +78,17 @@ btn.onclick = function(){
 
 }
 
+const forecast = [
+    {day:"Mon", temp:28},
+    {day:"Tue", temp:30},
+    {day:"Wed", temp:27},
+    {day:"Thu", temp:29},
+    {day:"Fri", temp:31}
+];
 
+let boxes = document.querySelectorAll(".forecast-day");
+
+forecast.forEach((item, i) => {
+    boxes[i].querySelector("p").innerText = item.day;
+    boxes[i].querySelector("span").innerText = item.temp + "°C";
+});

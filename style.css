@@ -167,3 +167,40 @@ body.dark{
     font-size:14px;
     padding:5px;
 }
+
+.forecast-section{
+    margin-top:30px;
+    text-align:center;
+    color:white;
+}
+
+.forecast-container{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.forecast-day{
+    background:rgba(255,255,255,0.2);
+    padding:15px;
+    border-radius:12px;
+    width:80px;
+    backdrop-filter: blur(10px);
+    transition:0.3s;
+}
+
+.forecast-day:hover{
+    transform:scale(1.05);
+}
+
+.forecast-day p{
+    margin:0;
+    font-weight:bold;
+}
+
+.forecast-day span{
+    display:block;
+    margin-top:5px;
+}
