@@ -2,11 +2,11 @@ function getWeather() {
 
     let city = document.getElementById("cityInput").value;
 
-    if(city === "") return;
+    if (!city) return;
 
-    document.getElementById("cityName").innerText = city;
+    document.getElementById("city").innerText = city;
 
-    // dummy data (API baad me lagayenge)
+    // dummy data (API later)
     document.getElementById("temp").innerText = "28°C";
 
     document.getElementById("desc").innerText = "Sunny ☀️";

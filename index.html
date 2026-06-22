@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Weather Dashboard</title>
@@ -15,40 +14,29 @@
 
 <body>
 
-<section class="hero">
+    <div class="container">
 
-    <div class="hero-content">
+        <h1>🌤 Weather Dashboard</h1>
 
-        <h1>Live Weather Updates 🌤</h1>
+        <div class="search-box">
 
-        <p>
-            Check temperature, humidity and forecast of any city in real time.
-        </p>
+            <input type="text" id="cityInput" placeholder="Enter city...">
 
-        <button class="hero-btn">Get Started</button>
+            <button onclick="getWeather()">Search</button>
 
-    </div>
+        </div>
 
-    <div class="weather-card">
+        <div class="weather-card">
 
-    <h2 id="city">City</h2>
+            <h2 id="city">City</h2>
+            <h1 id="temp">--°C</h1>
+            <p id="desc">Weather Info</p>
 
-    <h1 id="temp">--°C</h1>
-
-    <p id="desc">Weather condition</p>
-
-    <div class="details">
-
-        <div>💧 Humidity: <span id="humidity">--</span>%</div>
-
-        <div>🌬 Wind: <span id="wind">--</span> km/h</div>
+        </div>
 
     </div>
 
-</div>
-
-</section>
-
+    <script src="script.js"></script>
 
 </body>
 
